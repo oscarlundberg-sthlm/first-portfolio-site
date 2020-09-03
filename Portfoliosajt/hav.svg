@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="master-artboard" viewBox="0 0 841.9 595.3" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="841.9000244140625px" height="595.2999877929688px" enable-background="new 0 0 841.9 595.3">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="420.945" y1="353.9969" x2="420.945" y2="18.1218" gradientTransform="matrix(0.9933732232571569, -0.11493415291395911, 0.08211064012744283, 0.7096802902346989, -26.277402427139474, 151.1532313919347)">
+		<stop offset="0" style="stop-color:#FFFFFF"/>
+		<stop offset="1" style="stop-color:#42A891"/>
+	</linearGradient><path d="M 0 326.100006 H 841.900024 V 595.300018 H 0 V 326.100006 Z" fill="#649FC7" transform="matrix(1, 0, 0, 1, 0, 0)"/><path d="M 0 389.100006 H 841.900024 V 595.200012 H 0 V 389.100006 Z" fill="#72CCDE" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#91BC3E" d="M385,395C385,395,385,395,385,395C385,395,385,395,385,395z" transform="matrix(1, 0, 0, 1, 0, 0)"/>
+</svg>
