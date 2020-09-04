@@ -4,23 +4,47 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #ffd42a;
+    background-color: #ffffff;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
 }
-H1, H2, H3, H4, H5, H6 {
+H1 {
     font-family: "Titillium Web", serif;
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 72px;
     text-transform: uppercase;
+    line-height: 0.8em;
+}
+H2 {
+    font-family: "Titillium Web", serif;
+    font-weight: 900;
+    font-size: 72px;
+    text-transform: uppercase;
+    line-height: 0.8em;
+    margin: 24px 0 0.83em 0;
+    text-align: center;
+}
+H3, H4, H5, H6 {
+    font-family: "Titillium Web", serif;
+    font-weight: 900;
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 0.8em;
+    margin: 8px 0;
+    text-align: center;
 }
 P {
     font-family: "Titillium Web", sans-serif;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 24px;
 }
 #startbackground {
-    background-image: url("Oscar-background.png");
+    background-image: url("visuals/Oscar-background.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -30,13 +54,14 @@ P {
 #navbarfixed {
     position: fixed;
     margin-top: 0px;
+    z-index: 1;
     width: 100vw;
-    height: 50px;
-    background-color: #ffd42aA0;
+    height: 48px;
+    background-color: #DDDDDDA0;
 }
 /* Push down the content below FIXED BAR */
 .contentpusher {
-    height: 50px;
+    height: 48px;
     width: 850px;
     margin-left: auto;
     margin-right: auto;
@@ -51,7 +76,7 @@ header {
 }
 #oscar-logo {
     width: auto;
-    margin-top: 5px;
+    margin-top: 4px;
     height: 40px;
     float: left;
 }
@@ -67,7 +92,7 @@ header {
 /* L-REVERSE */
 #l-reverse {
     width: auto;
-    margin-top: 5px;
+    margin-top: 4px;
     height: 40px;
     float: right;
 }
@@ -75,7 +100,7 @@ header {
 nav {
     float: right;
     margin-right: 10px;
-    height: 50px;
+    height: 48px;
     display: table;
 }
 #mainnav {
@@ -106,7 +131,7 @@ header a {
     display: inline-block;
     margin-left: 0px;
     margin-right: 0px;
-    padding: 5px 10px;
+    padding: 4px 10px;
 }
 #mainnav a:hover {
     animation-name: hovernav;
@@ -117,15 +142,81 @@ header a {
     100%    {transform: scale(1.1);}
 }
 /* CONTENT */
-#startheadline {
+/* START */
+#startcontent h1 {
     position: relative;
     top: 20vh;
-    font-family: "Titillium Web", serif;
-    font-weight: 900;
-    font-size: 72px;
-    line-height: 0.8em;
+    z-index: 0;
     color: #ffd42a;
 }
+/* ABOUT */
+#about {
+    height: 100vh;
+}
+#aboutbg {
+    background-image: url("visuals/oscartotheside.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#about h2 {
+    color: #ffd42a;
+    column-span: all;
+}
+#oscar_dfp_pic {
+    float: right;
+    height: 240px;
+    width: 240px;
+    margin: 24px 0px 24px 24px;
+    border: 0px solid #000000;
+    border-radius: 50%;
+    column-span: all;
+    /* filter: grayscale(100%); */
+}
+#abouttext {
+    column-count: 2;
+    column-gap: 12px;
+    column-rule: 0px solid;
+}
+#oscsign {
+    height: 20%;
+    width: 20%;
+    /* filter: invert(); */
+}
+/* PORTFOLIO */
+#portfoliobg {
+    background-image: url("visuals/bakgrunder/IMG_5155.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#portfolio h2 {
+    color: #ffd42a;
+}
+.portfoliorow {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 4px;
+}
+.portfoliocolumn {
+    flex: 33.3%;
+    max-width: 33.3%;
+    padding: 0 4px;
+}
+.portfoliocolumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.portfoliorow p {
+    text-align: center;
+}
+
+/* CONTENT GENERAL STYLING */
 .contentparent {
     width: 850px;
     margin: 0;
@@ -142,7 +233,7 @@ header a {
 }
 /* FOOTER */
 footer {
-    height: 50px;
+    height: 48px;
     bottom: 0px;
     width: 100vw;
 }
