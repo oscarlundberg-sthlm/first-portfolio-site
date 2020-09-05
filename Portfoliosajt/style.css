@@ -35,7 +35,7 @@ H3, H4, H5, H6 {
     margin: 8px 0;
     text-align: center;
 }
-P {
+P, TABLE {
     font-family: "Titillium Web", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -57,7 +57,7 @@ P {
     z-index: 1;
     width: 100vw;
     height: 48px;
-    background-color: #DDDDDDA0;
+    background-color: #EEEEEEA0; /* #DDDDDDA0 */
 }
 /* Push down the content below FIXED BAR */
 .contentpusher {
@@ -74,26 +74,31 @@ header {
     margin-top: 0px;
     text-align: center;
 }
-#oscar-logo {
-    width: auto;
-    margin-top: 4px;
-    height: 40px;
+.navbarimagehref {
+    margin: 0;
+    padding: 0;
+}
+#logohref {
     float: left;
 }
-/* #navbarline {
-    position: absolute;
-    z-index: -1;
-    top: 22.5px;
-    background-color: #ff0000;
-    height: 5px;
-    width: inherit;
-} */
+#oscar-logo-top {
+    margin-top: 9px;
+    float: left;
+}
+#oscar-logo-top:hover {
 
-/* L-REVERSE */
-#l-reverse {
+}
+.logo-small {
+    height: 30px;
     width: auto;
-    margin-top: 4px;
-    height: 40px;
+}
+#instahref {
+    float: right;
+}
+#instagramlogo {
+    width: auto;
+    margin-top: 9px;
+    height: 30px;
     float: right;
 }
 /* NAVIGATION */
@@ -184,9 +189,13 @@ header a {
     width: 20%;
     /* filter: invert(); */
 }
+#about hr {
+    width: 33.3%;
+    margin-left: 0;
+}
 /* PORTFOLIO */
 #portfoliobg {
-    background-image: url("visuals/bakgrunder/IMG_5155.jpg");
+    background-image: url("visuals/bakgrunder/techbg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -211,9 +220,38 @@ header a {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    filter: grayscale(100%);
+}
+.portfoliocolumn img:hover {
+    filter: grayscale(0%)
 }
 .portfoliorow p {
     text-align: center;
+}
+/* CONTACT */
+#contactbg {
+    background-image: url("visuals/bakgrunder/techbg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#contact h2 {
+    color: #ffd42a;
+}
+#contact table {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+#contact table input, textarea {
+    border: 1px solid black;
+    box-sizing: content-box;
+    width: 480px;
+    padding: 12px;
+}
+#contact table textarea {
+    resize: none;
 }
 
 /* CONTENT GENERAL STYLING */
@@ -233,9 +271,10 @@ header a {
 }
 /* FOOTER */
 footer {
-    height: 48px;
     bottom: 0px;
     width: 100vw;
+    height: 96px;
+    background-color: #DDDDDDA0;
 }
 #footercontent {
     width: 850px;
@@ -243,5 +282,14 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
-    border: solid 1px black;
+}
+#oscar-logo-bottom {
+    margin-top: 4px;
+    margin-right: 0;
+    float: right;
+}
+#footerflexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

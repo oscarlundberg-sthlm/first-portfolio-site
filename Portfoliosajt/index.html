@@ -2,15 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <title>Oscar Lundberg - Frontend Developer</title>
 </head>
 <body>
     <div id="startbackground">
         <div id="navbarfixed">
             <header>
-                <img src="visuals/oscar-logo.png" id="oscar-logo">
-                <img src="visuals/L-reverse.png" id="l-reverse">
+                <a href="#top" id="logohref" class="navbarimagehref"><img src="visuals/oscar-logo.png" id="oscar-logo-top" class="logo-small"></a>
+                <a href="http://www.instagram.com" target="_blank" id="instahref" class="navbarimagehref"><img src="visuals/instagramlogo.png" id="instagramlogo"></a>
                 <div id="navbarline"></div>
                 <nav>
                     <div id="mainnav">
@@ -57,8 +58,8 @@
                     <p>
                     <img src="visuals/oscsign1.png" id="oscsign">
                     <hr>
-                    Oscar Lundberg
-                    </p>
+                    <p>Oscar Lundberg</p>
+                </p>
                 </div>
             </article>
         </article>
@@ -82,13 +83,42 @@
             <article class="contentcontainer">
                 <div id="contacttext">
                     <h2>Let's Connect!</h2>
-                    <p>Please get in touch =).</p>
+                        <form action="" method="POST">
+                            <table>
+                                <tr>
+                                    <!-- <td>Name:</td> -->
+                                    <td><input type="text" name="Name" placeholder="Firstname Lastname"></td>
+                                </tr>
+                                <tr>
+                                    <!-- <td>Email:</td> -->
+                                    <td><input type="email" name="Email" placeholder="Email"></td>
+                                </tr>
+                                <tr>
+                                    <!-- <td>Message:</td> -->
+                                    <td><textarea name="Message" rows="12" placeholder="Message"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="submit" value="Send"></td>
+                                </tr> 
+                            </table>
+                        </form>
                 </div>
             </article>
         </article>
     </div>
     <footer id="#footer" class="maincontainerwidth">
-        <div id="footercontent"></div>
+        <div id="footercontent">
+            <div id="footerflexbox">
+                <div class="footerflexcolumn">
+                    <p>© 2020 Oscar Lundberg<br>
+                    Stockholm<br>
+                    Sweden</p>
+                </div>
+                <div class="footerflexcolumn">
+                    <img src="visuals/oscar-logo.png" id="oscar-logo-bottom" class="logo-small">
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
