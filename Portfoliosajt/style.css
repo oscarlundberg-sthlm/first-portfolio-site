@@ -16,6 +16,7 @@ H1 {
     font-size: 72px;
     text-transform: uppercase;
     line-height: 0.8em;
+    color: #ffd42a;
 }
 H2 {
     font-family: "Titillium Web", serif;
@@ -25,6 +26,7 @@ H2 {
     line-height: 0.8em;
     margin: 24px 0 0.83em 0;
     text-align: center;
+    color: #ffd42a;
 }
 H3, H4, H5, H6 {
     font-family: "Titillium Web", serif;
@@ -44,7 +46,7 @@ P, TABLE {
     margin-bottom: 24px;
 }
 #startbackground {
-    background-image: url("visuals/Oscar-background.png");
+    background-image: url("visuals/Oscar-background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -57,7 +59,7 @@ P, TABLE {
     z-index: 1;
     width: 100vw;
     height: 48px;
-    background-color: #EEEEEEA0; /* #DDDDDDA0 */
+    background-color: #ffd42a00; /* #DDDDDDA0 */
 }
 /* Push down the content below FIXED BAR */
 .contentpusher {
@@ -85,9 +87,6 @@ header {
     margin-top: 9px;
     float: left;
 }
-#oscar-logo-top:hover {
-
-}
 .logo-small {
     height: 30px;
     width: auto;
@@ -111,33 +110,43 @@ nav {
 #mainnav {
     display: table-cell;
     vertical-align: middle;
-
 }
 header ul {
-    list-style-type: disc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    list-style-type: none;
     margin-block-start: 0px;
     margin-block-end: 0px;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-end: 36px;
     padding-inline-start: 0px;
     padding-inline-end: 0px;
 }
 header li {
-    display: inline-block;
+    background-color: #8C7516a0;
+    transform: skewX(-30deg);
+    margin: 0 1px;
+    height: 100%;
+    display: table;
 }
-header a {
+header nav a {
     font-family: "Titillium Web", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 16px;
-    color: black;
+    color: white;
     text-decoration: none;
     text-align: center;
-    display: inline-block;
+    vertical-align: middle;
+    display: table-cell;
     margin-left: 0px;
     margin-right: 0px;
-    padding: 4px 10px;
+    padding: 4px 20px;
+    transform: skewX(30deg);
 }
+
 #mainnav a:hover {
     animation-name: hovernav;
     animation-duration: 0.2s;
@@ -152,21 +161,19 @@ header a {
     position: relative;
     top: 20vh;
     z-index: 0;
-    color: #ffd42a;
 }
 /* ABOUT */
 #about {
     height: 100vh;
 }
 #aboutbg {
-    background-image: url("visuals/oscartotheside.png");
+    background-image: url("visuals/oscartotheside.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
 }
 #about h2 {
-    color: #ffd42a;
     column-span: all;
 }
 #oscar_dfp_pic {
@@ -194,16 +201,13 @@ header a {
     margin-left: 0;
 }
 /* PORTFOLIO */
-#portfoliobg {
+/* #portfoliobg {
     background-image: url("visuals/bakgrunder/techbg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-}
-#portfolio h2 {
-    color: #ffd42a;
-}
+} */
 .portfoliorow {
     height: 400px;
     display: flex;
@@ -230,14 +234,11 @@ header a {
 }
 /* CONTACT */
 #contactbg {
-    background-image: url("visuals/bakgrunder/techbg.png");
+    background-image: url("visuals/bakgrunder/techbg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-}
-#contact h2 {
-    color: #ffd42a;
 }
 #contact table {
     text-align: center;
@@ -292,4 +293,27 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+/* EFFECTS */
+.aniright, .anileft {
+    display: inline-block;
+}
+@keyframes aniright {
+    0% {padding-top: 48px; opacity: 0.0;}
+    100% {padding-top: 0px; opacity: 1.0;}
+}
+@keyframes anileft {
+    0% {padding-top: 48px; opacity: 0.0;}
+    100% {padding-top: 0px; opacity: 1.0;}
+}
+.aniright {
+    animation-name: aniright;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+.anileft {
+    animation-name: anileft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.3ms;
 }
