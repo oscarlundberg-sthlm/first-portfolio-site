@@ -2,49 +2,128 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <title>Oscar Lundberg - Frontend Developer</title>
 </head>
 <body>
-    <div id="navbarfixed">
-        <header>
-            <h1 id="h1me">Oscar Lundberg</h1>
-            <nav>
-                <ul id="mainnav">
-                        <li id="startbutton">
-                            <a href="#top">Start</a>
-                        </li>・
-                        <li id="aboutbutton">
-                            <a href="#about">Who am I?</a>
-                        </li>・
-                        <li id="portfoliobutton">
-                            <a href="#portfolio">Portfolio</a>
-                        </li>・
-                        <li id="contactbutton">
-                            <a href="#contact">Let's connect</a>
-                        </li>
-                </ul>
-            </nav>
-        </header>
+<!-- START -->
+    <div id="startbackground">
+        <div id="navbarfixed">
+            <header>
+                <a href="#top" id="logohref" class="navbarimage"><img src="visuals/oscar-logo.png" id="oscar-logo-top" class="logo-small"></a>
+                <div id="navbarline"></div>
+                <nav>
+                    <div id="mainnav">
+                        <ul>
+                            <li id="menubtn">
+                                <img src="visuals/menuicon.png" id="menuicon" class="navbarimage">                            
+                                <ul id="dropdown">
+                                    <li id="startbutton">
+                                        <a href="#top" class="dropmenu">Start</a>
+                                    </li><!-- ・ -->
+                                    <li id="aboutbutton">
+                                        <a href="#about" class="dropmenu">Who am I?</a>
+                                    </li><!-- ・ -->
+                                    <li id="portfoliobutton">
+                                        <a href="#portfolio" class="dropmenu">Portfolio</a>
+                                    </li><!-- ・ -->
+                                    <li id="contactbutton">
+                                        <a href="#contact" class="dropmenu">Let's connect</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                
+            </header>
+        </div>
+        <article id="startcontent" class="contentparent">
+            <div class="contentpusher">
+            </div>
+            <article class="contentcontainer">
+                <h1><div class="aniright">Frontend</div><br><div class="anileft">developer</div></h1>
+            </article>
     </div>
-    <article class="contentparent">
-        <div id="startcontent" class="contentpusher">
-        </div>
-        <article class="contentcontainer">
-            Frontend developer
-        </article>
     </article>
-    <article class="contentparent">
-        <div id="about" class="contentpusher">
-        </div>
-        <article class="contentcontainer">
-            Who am I?
+<!-- ABOUT -->
+    <div id="aboutbg">
+        <article id="about" class="contentparent">
+            <!-- <div class="contentpusher">
+            </div> -->
+            <article class="contentcontainer">
+                <div id="abouttext">
+                    <h2>Who am I?</h2>
+                    <p>My full name is Oscar Lundberg. I'm a frontend developer educated at Jensen Yrkeshögskola.</p>
+                    <p>From an early age I was fascinated with computers. I understood there was a world behind the visible layer, and intrigued to find out more.</p>
+                    <p>In my early twenties I started working on the tech side of online advertising.</p>
+                    <p>The company I worked for had offices around most of Europe and I was responsible for the Swedish branch, tech-wise. My daily tasks included managing ad-campaigns on a network of around 120 websites, manipulating code, making sure they displayed as agreed - and put together reports when the campaign-goals were reached.</p>
+                    <p>Although it was challenging and good work, I was young and felt the need to explore other things in life. I travelled, worked as a freelance musician, got an education in sustainable development, amongst other things.<img src="visuals/oscar_dfp.jpg" id="oscar_dfp_pic"></p>
+                    <p>Now I'm back - I've come full circle, and I'm very happy about it!</p>
+                    <p>
+                    <img src="visuals/oscsign1.png" id="oscsign">
+                    <hr>
+                    <p>Oscar Lundberg</p>
+                </div>
+            </article>
         </article>
-    </article>
-
+    </div>
+<!-- PORTFOLIO -->
+    <div id="portfoliobg">
+        <article id="portfolio" class="contentparent">
+            <!-- <div class="contentpusher">
+            </div> -->
+            <article class="contentcontainer">
+                <div id="portfoliotext">
+                    <h2>Portfolio</h2>
+                    <iframe src="portfolio.html" frameborder="0"></iframe>
+                </div>
+            </article>
+        </article>
+    </div>
+<!-- CONTACT -->
+    <div id="contactbg">
+        <article id="contact" class="contentparent">
+            <!-- <div class="contentpusher">
+            </div> -->
+            <article class="contentcontainer">
+                <div id="contacttext">
+                    <h2>Let's Connect!</h2>
+                    <form action="" method="POST">
+                        <table>
+                            <tr>
+                                <td><input type="text" name="Name" placeholder="Firstname Lastname" required></td>
+                            </tr>
+                            <tr>
+                                <td><input type="email" name="Email" placeholder="Email" required></td>
+                            </tr>
+                            <tr>
+                                <td><textarea name="Message" rows="12" placeholder="Message" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" value="Send"></td>
+                            </tr> 
+                        </table>
+                    </form>
+                </div>
+            </article>
+        </article>
+    </div>
+<!-- FOOTER -->
     <footer id="#footer" class="maincontainerwidth">
-        <div id="hav1"></div>
-        <img src="palmer.svg" id="palmer">
+        <div id="footercontent">
+            <div id="footerflexbox">
+                <div class="footerflexcolumn">
+                    <p>© 2020 Oscar Lundberg<br>
+                    Stockholm<br>
+                    Sweden</p>
+                </div>
+                <div class="footerflexcolumn">
+                    <img src="visuals/oscar-logo.png" id="oscar-logo-bottom" class="logo-small">
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
