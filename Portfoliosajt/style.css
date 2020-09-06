@@ -62,6 +62,7 @@ P, TABLE {
     background-color: #ffd42a00; /* #DDDDDDA0 */
 }
 /* Push down the content below FIXED BAR */
+/* Deactivated in index.html for every section but start */
 .contentpusher {
     height: 48px;
     width: 850px;
@@ -74,11 +75,6 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
-    text-align: center;
-}
-.navbarimagehref {
-    margin: 0;
-    padding: 0;
 }
 #logohref {
     float: left;
@@ -91,19 +87,10 @@ header {
     height: 30px;
     width: auto;
 }
-#instahref {
-    float: right;
-}
-#instagramlogo {
-    width: auto;
-    margin-top: 9px;
-    height: 30px;
-    float: right;
-}
+
 /* NAVIGATION */
 nav {
     float: right;
-    margin-right: 10px;
     height: 48px;
     display: table;
 }
@@ -113,27 +100,44 @@ nav {
 }
 header ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 48px;
+    flex-direction: column;
     list-style-type: none;
     margin-block-start: 0px;
     margin-block-end: 0px;
     margin-inline-start: 0px;
-    margin-inline-end: 36px;
+    margin-inline-end: 0px;
     padding-inline-start: 0px;
     padding-inline-end: 0px;
 }
-header li {
-    background-color: #8C7516a0;
-    transform: skewX(-30deg);
-    margin: 0 1px;
-    height: 100%;
+header li li {
+    background-color: #AAAAAAd0;
+    transform: skewX(-5deg);
+    margin: 1px 0px;
     display: table;
 }
-header nav a {
+header li li:hover {
+    background-color: #ffd42aF0;
+}
+#menubtn {
+    width: 148px;
+    height: 30px;
+    text-align: right;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+@keyframes menuicon-seeme {
+    100% {transform:rotate(360deg);}
+}
+#menuicon {
+    width: auto;
+    height: 30px;
+    animation-name: menuicon-seeme;
+    animation-duration: 0.5s;
+    animation-delay: 4s;
+}
+.dropmenu {
     font-family: "Titillium Web", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 16px;
     color: white;
@@ -141,18 +145,24 @@ header nav a {
     text-align: center;
     vertical-align: middle;
     display: table-cell;
+    width: 178px;
     margin-left: 0px;
     margin-right: 0px;
-    padding: 4px 20px;
-    transform: skewX(30deg);
+    padding: 24px 0px;
+    transform: skewX(5deg);
 }
-
+#dropdown {
+    display: none;
+}
+#menubtn:hover #dropdown {
+    display: block;
+}
 #mainnav a:hover {
-    animation-name: hovernav;
+    animation-name: hovernavlink;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
 }
-@keyframes hovernav {
+@keyframes hovernavlink {
     100%    {transform: scale(1.1);}
 }
 /* CONTENT */
@@ -175,6 +185,7 @@ header nav a {
 }
 #about h2 {
     column-span: all;
+    margin-top: 0;
 }
 #oscar_dfp_pic {
     float: right;
@@ -184,7 +195,6 @@ header nav a {
     border: 0px solid #000000;
     border-radius: 50%;
     column-span: all;
-    /* filter: grayscale(100%); */
 }
 #abouttext {
     column-count: 2;
@@ -194,20 +204,16 @@ header nav a {
 #oscsign {
     height: 20%;
     width: 20%;
-    /* filter: invert(); */
 }
 #about hr {
     width: 33.3%;
     margin-left: 0;
 }
 /* PORTFOLIO */
-/* #portfoliobg {
-    background-image: url("visuals/bakgrunder/techbg.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-} */
+#portfolio iframe {
+    height: 75vh;
+    width: 100%;
+}
 .portfoliorow {
     height: 400px;
     display: flex;
@@ -234,7 +240,7 @@ header nav a {
 }
 /* CONTACT */
 #contactbg {
-    background-image: url("visuals/bakgrunder/techbg.jpg");
+    background-image: url("visuals/techbg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -275,7 +281,7 @@ footer {
     bottom: 0px;
     width: 100vw;
     height: 96px;
-    background-color: #DDDDDDA0;
+    background-color: #ffd42aF0;
 }
 #footercontent {
     width: 850px;
