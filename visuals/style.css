@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Lora&family=Lato&family=Titillium+Web:wght@400;700;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #ffffff;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+H1 {
+    font-family: "Titillium Web", serif;
+    font-weight: 900;
+    font-size: 72px;
+    text-transform: uppercase;
+    line-height: 0.8em;
+    color: #ffd42a;
+}
+H2 {
+    font-family: "Titillium Web", serif;
+    font-weight: 900;
+    font-size: 72px;
+    text-transform: uppercase;
+    line-height: 0.8em;
+    margin: 24px 0 0.83em 0;
+    text-align: center;
+    color: #ffd42a;
+}
+H3, H4, H5, H6 {
+    font-family: "Titillium Web", serif;
+    font-weight: 900;
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 0.8em;
+    margin: 8px 0;
+    text-align: center;
+}
+P, TABLE {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+#startbackground {
+    background-image: url("visuals/Oscar-background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+/* TOP FIXED BAR */
+#navbarfixed {
+    position: fixed;
+    margin-top: 0px;
+    z-index: 1;
+    width: 100vw;
+    height: 48px;
+    background-color: #ffd42a00; /* #DDDDDDA0 */
+}
+/* Push down the content below FIXED BAR */
+/* Deactivated in index.html for every section but start */
+.contentpusher {
+    height: 48px;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* HEADER */
+header {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+#logohref {
+    float: left;
+}
+#oscar-logo-top {
+    margin-top: 9px;
+    float: left;
+}
+.logo-small {
+    height: 30px;
+    width: auto;
+}
+
+/* NAVIGATION */
+nav {
+    float: right;
+    height: 48px;
+    display: table;
+}
+#mainnav {
+    display: table-cell;
+    vertical-align: middle;
+}
+header ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+}
+header li li {
+    background-color: #AAAAAAd0;
+    transform: skewX(-5deg);
+    margin: 1px 0px;
+    display: table;
+}
+header li li:hover {
+    background-color: #ffd42aF0;
+}
+#menubtn {
+    width: 148px;
+    height: 30px;
+    text-align: right;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+@keyframes menuicon-seeme {
+    100% {transform:rotate(360deg);}
+}
+#menuicon {
+    width: auto;
+    height: 30px;
+    animation-name: menuicon-seeme;
+    animation-duration: 0.5s;
+    animation-delay: 4s;
+}
+.dropmenu {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    width: 178px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 24px 0px;
+    transform: skewX(5deg);
+}
+#dropdown {
+    display: none;
+}
+#menubtn:hover #dropdown {
+    display: block;
+}
+#mainnav a:hover {
+    animation-name: hovernavlink;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+@keyframes hovernavlink {
+    100%    {transform: scale(1.1);}
+}
+/* CONTENT */
+/* START */
+#startcontent h1 {
+    position: relative;
+    top: 20vh;
+    z-index: 0;
+}
+/* ABOUT */
+#about {
+    height: 100vh;
+}
+#aboutbg {
+    background-image: url("visuals/oscartotheside.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#about h2 {
+    column-span: all;
+    margin-top: 0;
+}
+#oscar_dfp_pic {
+    float: right;
+    height: 240px;
+    width: 240px;
+    margin: 24px 0px 24px 24px;
+    border: 0px solid #000000;
+    border-radius: 50%;
+    column-span: all;
+}
+#abouttext {
+    column-count: 2;
+    column-gap: 12px;
+    column-rule: 0px solid;
+}
+#oscsign {
+    height: 20%;
+    width: 20%;
+}
+#about hr {
+    width: 33.3%;
+    margin-left: 0;
+}
+/* PORTFOLIO */
+#portfolio iframe {
+    height: 75vh;
+    width: 100%;
+}
+.portfoliorow {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 4px;
+}
+.portfoliocolumn {
+    flex: 33.3%;
+    max-width: 33.3%;
+    padding: 0 4px;
+}
+.portfoliocolumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(100%);
+}
+.portfoliocolumn img:hover {
+    filter: grayscale(0%)
+}
+.portfoliorow p {
+    text-align: center;
+}
+/* CONTACT */
+#contactbg {
+    background-image: url("visuals/techbg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#contact table {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+#contact table input, textarea {
+    border: 1px solid black;
+    box-sizing: content-box;
+    width: 480px;
+    padding: 12px;
+}
+#contact table textarea {
+    resize: none;
+}
+
+/* CONTENT GENERAL STYLING */
+.contentparent {
+    width: 850px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contentcontainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: inherit;
+    padding: 0px;
+    height: 100vh;
+}
+/* FOOTER */
+footer {
+    bottom: 0px;
+    width: 100vw;
+    height: 96px;
+    background-color: #ffd42aF0;
+}
+#footercontent {
+    width: 850px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+#oscar-logo-bottom {
+    margin-top: 4px;
+    margin-right: 0;
+    float: right;
+}
+#footerflexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* EFFECTS */
+.aniright, .anileft {
+    display: inline-block;
+}
+@keyframes aniright {
+    0% {padding-top: 48px; opacity: 0.0;}
+    100% {padding-top: 0px; opacity: 1.0;}
+}
+@keyframes anileft {
+    0% {padding-top: 48px; opacity: 0.0;}
+    100% {padding-top: 0px; opacity: 1.0;}
+}
+.aniright {
+    animation-name: aniright;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+.anileft {
+    animation-name: anileft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.3ms;
+}
