@@ -2,42 +2,47 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/dynamic-menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/colors.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/start.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
     <title>Oscar Lundberg - Frontend Developer</title>
 </head>
 <body>
 <!-- START -->
     <div id="startbackground">
         <div id="navbarfixed">
-            <header>
-                <a href="#top" id="logohref" class="navbarimage"><img src="visuals/oscar-logo.png" id="oscar-logo-top" class="logo-small"></a>
-                <div id="navbarline"></div>
-                <nav>
-                    <div id="mainnav">
+            <div id="topbackground-strip">    
+                <header>
+                    <a href="#top" id="logohref" class="navbarimage">
+                        <div class="oscar-clothingtag" id="oscar-header-add"></div>
+                        <div class="oscar-clothingtag" id="oscar-header">Oscar<br>Lundberg<br>
+                        </div>
+                    </a>
+                    <div id="header-spacer"></div>
+                    <nav>                      
                         <ul>
-                            <li id="menubtn">
-                                <img src="visuals/menuicon.png" id="menuicon" class="navbarimage">                            
-                                <ul id="dropdown">
-                                    <li id="startbutton">
-                                        <a href="#top" class="dropmenu">Start</a>
-                                    </li><!-- ・ -->
-                                    <li id="aboutbutton">
-                                        <a href="#about" class="dropmenu">Who am I?</a>
-                                    </li><!-- ・ -->
-                                    <li id="portfoliobutton">
-                                        <a href="#portfolio" class="dropmenu">Portfolio</a>
-                                    </li><!-- ・ -->
-                                    <li id="contactbutton">
-                                        <a href="#contact" class="dropmenu">Let's connect</a>
-                                    </li>
-                                </ul>
+                            <li>
+                                <a href="#top">Start</a>
+                            </li><!-- ・ -->
+                            <li>
+                                <a href="#about">Who am I?</a>
+                            </li><!-- ・ -->
+                            <li>
+                                <a href="#portfolio">Portfolio</a>
+                            </li><!-- ・ -->
+                            <li>
+                                <a href="#contact">Let's connect</a>
                             </li>
                         </ul>
-                    </div>
-                </nav>
-                
-            </header>
+                    </nav>
+                </header>
+            </div>
         </div>
         <article id="startcontent" class="contentparent">
             <div class="contentpusher">
@@ -50,8 +55,8 @@
 <!-- ABOUT -->
     <div id="aboutbg">
         <article id="about" class="contentparent">
-            <!-- <div class="contentpusher">
-            </div> -->
+            <div class="contentpusher">
+            </div>
             <article class="contentcontainer">
                 <div id="abouttext">
                     <h2>Who am I?</h2>
@@ -72,8 +77,8 @@
 <!-- PORTFOLIO -->
     <div id="portfoliobg">
         <article id="portfolio" class="contentparent">
-            <!-- <div class="contentpusher">
-            </div> -->
+            <div class="contentpusher">
+            </div>
             <article class="contentcontainer">
                 <div id="portfoliotext">
                     <h2>Portfolio</h2>
@@ -85,8 +90,8 @@
 <!-- CONTACT -->
     <div id="contactbg">
         <article id="contact" class="contentparent">
-            <!-- <div class="contentpusher">
-            </div> -->
+            <div class="contentpusher">
+            </div>
             <article class="contentcontainer">
                 <div id="contacttext">
                     <h2>Let's Connect!</h2>
@@ -120,7 +125,7 @@
                     Sweden</p>
                 </div>
                 <div class="footerflexcolumn">
-                    <img src="visuals/oscar-logo.png" id="oscar-logo-bottom" class="logo-small">
+                    <img src="visuals/oscarlogo.svg" id="oscar-logo-bottom" class="logo-small">
                 </div>
             </div>
         </div>

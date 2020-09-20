@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Lora&family=Lato&family=Titillium+Web:wght@400;700;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #ffffff;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+H1 {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+    text-transform: uppercase;
+    line-height: 0.8em;
+    color: var(--main-color);
+    text-shadow: 6px 6px 0px var(--secondary-color);
+}
+H2 {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+    text-transform: uppercase;
+    line-height: 0.8em;
+    margin: 24px 0 0.83em 0;
+    text-align: center;
+    color: var(--main-color);
+    text-shadow: 6px 6px 0px var(--secondary-color);
+}
+H3, H4, H5, H6 {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 0.8em;
+    margin: 8px 0;
+    text-align: center;
+}
+P, TABLE {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+.logo-small {
+    height: 30px;
+    width: auto;
+}
+/* Push down the content below FIXED BAR */
+.contentpusher {
+    height: 48px;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* CONTENT GENERAL STYLING */
+.contentparent {
+    width: 850px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contentcontainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: inherit;
+    padding: 0px;
+    height: 100vh;
+}
+/* FOOTER */
+footer {
+    bottom: 0px;
+    width: 100vw;
+    height: 96px;
+    background-color: var(--main-color);
+    border-top: 6px solid var(--secondary-color);
+}
+#footercontent {
+    width: 850px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+#oscar-logo-bottom {
+    margin-top: 4px;
+    margin-right: 0;
+    float: right;
+}
+#footerflexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* EFFECTS */
+.aniright, .anileft {
+    display: inline-block;
+}
+@keyframes aniright {
+    0% {padding-top: 48px; opacity: 0.0;}
+    100% {padding-top: 0px; opacity: 1.0;}
+}
+@keyframes anileft {
+    0% {padding-top: 48px; opacity: 0.0;}
+    100% {padding-top: 0px; opacity: 1.0;}
+}
+.aniright {
+    animation-name: aniright;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+.anileft {
+    animation-name: anileft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.3ms;
+}
