@@ -45,11 +45,11 @@ header {
     background-color: var(--third-color);
     border: 1px solid black;
 }
-#oscar-header-add {
+#oscar-clothingtag-top {
     border-bottom: none;
     height: 18px;
 }
-#oscar-header {
+#oscar-clothingtag-bottom {
     transform: rotate(180deg);
     border-bottom: 1px dashed black;
     text-decoration: none;
