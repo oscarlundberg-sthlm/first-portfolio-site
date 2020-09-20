@@ -1,0 +1,22 @@
+/* CONTACT */
+#contactbg {
+    background-image: url("../visuals/techbg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#contact table {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+#contact table input, textarea {
+    border: 1px solid black;
+    box-sizing: content-box;
+    width: 480px;
+    padding: 12px;
+}
+#contact table textarea {
+    resize: none;
+}

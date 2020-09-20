@@ -1,0 +1,29 @@
+/* PORTFOLIO */
+#portfolio iframe {
+    height: 75vh;
+    width: 100%;
+}
+.portfoliorow {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 4px;
+}
+.portfoliocolumn {
+    flex: 33.3%;
+    max-width: 33.3%;
+    padding: 0 4px;
+}
+.portfoliocolumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(100%);
+}
+.portfoliocolumn img:hover {
+    filter: grayscale(0%)
+}
+.portfoliorow p {
+    text-align: center;
+}
